@@ -1,12 +1,12 @@
-import {StyleSheet, Text, View, FlatList} from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import Beranda from './screens/Beranda';
-import Pemutakhiran from './screens/Pemutakhiran';
-import Profil from './screens/Profil';
+import Home from './screens/Home';
+import Data from './screens/Data';
+import Akun from './screens/Akun';
 
 const Stack = createNativeStackNavigator();
 const Tabs = createBottomTabNavigator();
@@ -15,31 +15,31 @@ const MenuTab = () => {
   return (
     <Tabs.Navigator>
       <Tabs.Screen
-        name="Beranda"
-        component={Beranda}
+        name="Home"
+        component={Home}
         options={{
-          tabBarLabel: 'Beranda',
-          tabBarIcon: ({color, size}) => (
+          tabBarLabel: 'Home',
+          tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="home" color={color} size={size} />
           ),
         }}
       />
       <Tabs.Screen
-        name="Pemutakhiran"
-        component={Pemutakhiran}
+        name="Data"
+        component={Data}
         options={{
-          tabBarLabel: 'Pemutakhiran',
-          tabBarIcon: ({color, size}) => (
+          tabBarLabel: 'Data',
+          tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="file-document" color={color} size={size} />
           ),
         }}
       />
-       <Tabs.Screen
-        name="Profil"
-        component={Profil}
+      <Tabs.Screen
+        name="Akun"
+        component={Akun}
         options={{
-          tabBarLabel: 'Profil',
-          tabBarIcon: ({color, size}) => (
+          tabBarLabel: 'Akun',
+          tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="account" color={color} size={size} />
           ),
         }}
@@ -55,7 +55,7 @@ function App() {
         <Stack.Screen
           name="Tab"
           component={MenuTab}
-          options={{headerShown: false}}
+          options={{ headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>
@@ -64,4 +64,4 @@ function App() {
 
 export default App;
 
-const style = StyleSheet.create({});
+const styles = StyleSheet.create({});
