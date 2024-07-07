@@ -28,7 +28,7 @@ const Beranda = () => {
         </View>
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Pemilih Ubah </Text>
-          <Text style={styles.sectionValue}>1</Text>
+          <Text style={styles.sectionValue}>2</Text>
         </View>
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Pemilih Tersaring  </Text>

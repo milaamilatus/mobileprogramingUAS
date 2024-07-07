@@ -16,8 +16,8 @@ const Akun = () => {
   };
 
   const openExternalLink = () => {
-    // Tautkan ke halaman atau URL yang sesuai
-    Linking.openURL('https://drivecoklit.kpu.go.id'); // Ganti dengan URL yang sesuai
+
+    Linking.openURL('https://drivecoklit.kpu.go.id'); 
   };
 
   return (

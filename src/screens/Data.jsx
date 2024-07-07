@@ -4,7 +4,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 const initialData = [
   { id: '1', nik: '3528085407060001', name: 'RAUDATUL JANNAH', status: 'Pemilih Sesuai', synced: true, coklit: true },
-  { id: '2', nik: '3528080107810115', name: 'IMAM ROFII ', status: 'Pemilih Sesuai', synced: true, coklit: true },
+  { id: '2', nik: '3528080107810115', name: 'IMAM ROFII ', status: 'Pemilih Ubah', synced: true, coklit: true },
   { id: '3', nik: '3528086008890006', name: 'KUTSIYA', status: 'Pemilih Ubah', synced: true, coklit: true },
   { id: '4', nik: '3528080107840077', name: 'PURRAWI', status: 'Pemilih Sesuai', synced: true, coklit: true },
   { id: '5', nik: '3528087006120005', name: 'AGUS WIDODO ', status: 'Pemilih Sesuai', synced: true, coklit: true },
